@@ -88,7 +88,7 @@ Reference: https://www.jianshu.com/p/a85bc2a8fa56   / http://resuly.me/2017/11/0
 # install jupyterthemes
 pip install jupyterthemes
 
-# 配置默认主题
+# Set  Default theme
 jt -r
 ```
 * After the above operation, you can find the file in this directory
