@@ -69,6 +69,45 @@ Since there is no install package for Mac OS,  [Homebrew](https://brew.sh/) coul
    ```
 
 ### Install R
-
+Reference: IRkernel [Github Instruction](https://github.com/IRkernel/IRkernel)
+Type command in R
+```
+install.packages('IRkernel')
+IRkernel::installspec()  # to register the kernel in the current R installation
+```
+Then 
+```
+IRkernel::installspec(name = 'ir33', displayname = 'R 3.3')
+```
 
 ## Extensions
+Reference: https://www.jianshu.com/p/a85bc2a8fa56   / http://resuly.me/2017/11/03/jupyter-config-for-windows/
+<br>Extension is another feature for jupyter notebook
+* Change the theme
+```
+# install jupyterthemes
+pip install jupyterthemes
+
+# 配置默认主题
+jt -r
+```
+* After the above operation, you can find the file in this directory
+   * Windows C:/Users/username/.jupyter/custom
+   * Mac: /Users/username/.jupyter/custom
+* Here you can change the font or color or shortcut to revise certain code [Demo Someone Created](https://github.com/YilinXia/Jupyter-Notebook-Setting/blob/master/custom.zip)
+
+* Install all extensions for jupyter
+```
+pip install jupyter_contrib_nbextensions
+jupyter contrib nbextension install --user
+
+pip install jupyter_nbextensions_configurator
+jupyter nbextensions_configurator enable --user
+```
+* Enable extensions
+```
+jupyter nbextension enable collapsible_headings/main
+```
+**attention** the file followed ```enable``` is some ```JS```file 
+**Mac** /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/jupyter_contrib_nbextensions
+**Windows** 
