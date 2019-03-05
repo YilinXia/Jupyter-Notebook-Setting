@@ -32,27 +32,41 @@ c.NotebookApp.notebook_dir = u'C:/Users/Brillanting/Jupyter'
 Before installing other kernels, I'd like to say that most kernels are based on the existed softwares in your computer, so the first step usually is to install correpsonding software in your computer.<br>
 
 ### Install Octave
-* install Octave on Mac
+* Mac
+   * install Octave on Mac
 Since there is no install package for Mac OS,  [Homebrew](https://brew.sh/) could be a site for us.
-   * Type the following code in Terminal
+      * Type the following code in Terminal
+      ```
+      /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)”
+      ```
+      * Upgrade and update brew
+      ```
+      brew upgrade && brew update
+      ```
+     * Install octave wait for about 10 minutes
+     ```
+     brew install octave
+     ```
+   * Install octave kernel
    ```
-   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)”
+   pip install octave-kernel
    ```
-   * Upgrade and update brew
-   ```
-   brew upgrade && brew update
-   ```
-  * Install octave wait for about 10 minutes
-  ```
-  brew install octave
-  ```
-  
-* intsall Octave on Windows [Octave Download](https://www.gnu.org/software/octave/download.html)
+* Windows
+   * intsall Octave on Windows [Octave Download](https://www.gnu.org/software/octave/download.html)
 
-* Install octave kernel
-```
-pip install octave-kernel
-```
+   * Add environment path
+   ```
+   Variable Name: OCTAVE_EXECUTABLE
+   Variable Value: E:\Octave\Octave-5.1.0.0\mingw64\bin\octave-cli.exe
+   ```
+   * Change the tornado to 5.1.1
+   ```
+   pip3 install tornado==5.1.1
+   ```
+   * Install octave kernel
+   ```
+   pip install octave-kernel
+   ```
 
 ### Install R
 
