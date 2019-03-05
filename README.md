@@ -107,7 +107,8 @@ jupyter nbextensions_configurator enable --user
 * Enable extensions
 ```
 jupyter nbextension enable collapsible_headings/main
+jupyter nbextension enable code_prettify/code_prettify
 ```
-**attention** the file followed ```enable``` is some ```JS```file 
-**Mac** /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/jupyter_contrib_nbextensions
-**Windows** 
+**attention** the file followed ```enable``` is some ```JS```file <br>
+**Mac** /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/jupyter_contrib_nbextensions<br>
+**Windows** C:\Users\username\AppData\Local\Programs\Python\Python37\Lib\site-packages\jupyter_contrib_nbextensions
